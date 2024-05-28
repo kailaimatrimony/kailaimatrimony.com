@@ -1,0 +1,22 @@
+{
+  "name": "kailai",
+  "version": "1.0.0",
+  "description": "Kailai Matrimony static website",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.2",
+    "vite": "^5.2.12"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3"
+  }
+}
