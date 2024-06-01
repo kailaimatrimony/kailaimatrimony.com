@@ -7,8 +7,13 @@ body {
     text-align: center;
 }
 
-.mb-4 {
+.mb-4,
+.mb-2 {
     margin-bottom: 0 !important;
+}
+
+.btn-primary {
+    border-radius: 0%;
 }
 
 .main-bar {
@@ -19,10 +24,19 @@ body {
     background-color: #f8f9fa;
 }
 
+.py-2 {
+    padding-top: 0 !important;
+}
+
+.logo.mb-2 img {
+    width: 24%;
+}
+
 .logo-txt {
     font-size: 24px;
     font-weight: bold;
 }
+
 
 nav ul {
     list-style: none;
@@ -33,7 +47,21 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: gray;
+}
+
+
+.aboutus h2,
+p {
+    text-align: left;
+}
+
+.btns {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 12px;
 }
 
 footer {
