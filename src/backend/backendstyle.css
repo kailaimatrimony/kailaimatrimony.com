@@ -42,3 +42,21 @@ body {
     font-size: 18px;
     cursor: pointer;
 }
+
+/**dashboard**/
+.pb-1,
+.py-1 {
+    padding-bottom: .25rem !important;
+    padding-left: 24px !important;
+    font-size: 15px !important;
+}
+
+.form-control-file,
+.form-control-range {
+    width: auto !important;
+}
+
+#home-collapse ul li,
+#account-collapse ul li {
+    padding-top: 8px;
+}
