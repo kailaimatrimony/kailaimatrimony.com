@@ -49,22 +49,23 @@
                     <div class="collapse" id="home-collapse">
                         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                             <li><a href="#home-main-banner"
-                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">Main
+                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded section-link">Main
                                     Banner</a></li>
                             <li><a href="#home-about-company"
-                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">About
+                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded section-link">About
                                     Company</a></li>
                             <li><a href="#home-our-services"
-                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">Our
+                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded section-link">Our
                                     Services</a></li>
                             <li><a href="#home-testimonial-slider"
-                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">Testimonial
+                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded section-link">Testimonial
                                     Slider</a></li>
                             <li><a href="#home-about-founder"
-                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">About Our
+                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded section-link">About
+                                    Our
                                     Founder</a></li>
                             <li><a href="#home-free-consultation"
-                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded">Free
+                                    class="link-body-emphasis d-inline-flex text-decoration-none rounded section-link">Free
                                     Consultation</a></li>
                         </ul>
                     </div>
@@ -100,7 +101,7 @@
         <!-- Main Content -->
         <div class="container-fluid p-3">
             <!-- Home Section -->
-            <section id="home-main-banner">
+            <section id="home-main-banner" class="section-content">
                 <h2>Main Banner</h2>
                 <form>
                     <div class="form-group">
@@ -119,7 +120,7 @@
                 </form>
             </section>
 
-            <section id="home-about-company" class="mt-5">
+            <section id="home-about-company" class="section-content mt-5">
                 <h2>About Company</h2>
                 <form>
                     <div class="form-group">
@@ -135,7 +136,7 @@
                 </form>
             </section>
 
-            <section id="home-our-services" class="mt-5">
+            <section id="home-our-services" class="section-content mt-5">
                 <h2>Our Services</h2>
                 <form>
                     <div class="form-group">
@@ -169,7 +170,7 @@
                 </form>
             </section>
 
-            <section id="home-testimonial-slider" class="mt-5">
+            <section id="home-testimonial-slider" class="section-content mt-5">
                 <h2>Testimonial Slider</h2>
                 <form>
                     <div class="form-group">
@@ -203,7 +204,7 @@
                 </form>
             </section>
 
-            <section id="home-about-founder" class="mt-5">
+            <section id="home-about-founder" class="section-content mt-5">
                 <h2>About Our Founder</h2>
                 <form>
                     <div class="form-group">
@@ -223,7 +224,7 @@
                 </form>
             </section>
 
-            <section id="home-free-consultation" class="mt-5">
+            <section id="home-free-consultation" class="section-content mt-5">
                 <h2>Free Consultation</h2>
                 <form>
                     <div class="form-group">
@@ -246,10 +247,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Scroll to the respective section on link click
-            $('a[href^="#"]').on('click', function (e) {
+            // Hide all sections except the first one by default
+            $('.section-content').hide();
+            $('.section-content').first().show();
+
+            // Scroll to the respective section on link click and show/hide sections
+            $('a.section-link').on('click', function (e) {
                 e.preventDefault();
                 var target = this.hash;
+                $('.section-content').hide();
+                $(target).show();
                 $('html, body').animate({
                     scrollTop: $(target).offset().top
                 }, 500, function () {
