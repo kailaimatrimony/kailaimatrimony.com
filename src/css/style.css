@@ -1,11 +1,9 @@
 /* CSS Document */
 
 /* 
-    Created on   : 23/05/2018.
-    Theme Name   : Charles-Business-Consulting HTML Template.
     Version      : 1.0.
-    Author       : @CreativeGigs.
-    Developed by : Jubayer al hasan. (jubayer.hasan1991@gmail.com)
+    Author       : @Aravindhakumar DEV
+    Developed by : Aravindhakumar G(aravindhakumar.dev@gmail.com)
    
 */
 
@@ -16,11 +14,9 @@
 /*   02 - Theme Title  */
 /*   03 - Theme Pagination  */
 /*   04 - Theme Header One */
-/*   05 - Theme Header Two */
 /*   06 - Theme menu One  */
 /*   07 - Theme menu Two  */
 /*   08 - Theme Main Banner  */
-/*   09 - Top Feature  */
 /*   10 - About Company  */
 /*   11 - Feature Banner  */
 /*   12 - Service Style One  */
@@ -500,7 +496,7 @@ body .theme-button-one:hover {
 
 .header-one .top-header {
   background: #fff;
-  padding: 40px 0 32px 0;
+  padding: 24px 0 12px 0;
 }
 
 .header-one .top-header .address-wrapper li {
@@ -608,9 +604,9 @@ body .theme-button-one:hover {
 }
 
 .header-one .theme-menu-wrapper .bg-wrapper {
-  background: #000f32;
+  background-image: linear-gradient(to left, #f539f8, #5356fb);
   position: relative;
-  padding-left: 25px;
+  padding-left: 24px;
 }
 
 .theme-menu-wrapper .right-widget ul li {
@@ -713,7 +709,7 @@ body .theme-button-one:hover {
 }
 
 /*------------------------ Theme menu Two --------------------*/
-.header-two #mega-menu-holder>ul>li>a,
+
 .header-two #mega-menu-holder li .sub-toggle,
 .header-two #mega-menu-holder>ul>li>a:before {
   color: #555555;
@@ -3233,3 +3229,23 @@ body .theme-button-one:hover {
   padding: 0 20px;
   border: 1px solid #f0f0f0;
 }
+
+
+/****/ 
+.logo{
+  text-align: center;
+  text-align: -webkit-center;
+  }
+.logo img{
+  width: 99px !important;
+}
+.logo a{
+background: -webkit-linear-gradient(145deg,#F539F8, #5356fb);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: bold;
+}
+.header-one #mega-menu-holder>ul>li>a{color: #ffffff !important;}
+#mega-menu-holder>ul> li.active > a{color: #333 !important;}
+
+
