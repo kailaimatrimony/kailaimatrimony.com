@@ -255,24 +255,25 @@
                     </div>
                     <div class="col-xl-6 col-lg-7 col-12">
                         <div class="form-wrapper">
-                            <form action="#" class="theme-form-one">
-                                <div class="row">
-                                    <div class="col-md-6"><input type="text" placeholder="Name *"></div>
-                                    <div class="col-md-6"><input type="text" placeholder="Phone *"></div>
-                                    <div class="col-md-6"><input type="email" placeholder="Email *"></div>
-                                    <div class="col-md-6">
-                                        <select class="form-control" id="exampleSelect1">
-                                            <option>Service you’re looking for?</option>
-                                            <option>MARRIAGE</option>
-                                            <option>VASTU</option>
-                                            <option>ASTROLOGY</option>
-                                            <option>NUMEROLOGY</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12"><textarea placeholder="Message"></textarea></div>
-                                </div> <!-- /.row -->
-                                <button class="theme-button-one">SUBMIT</button>
-                            </form>
+				<form name="contact" method="POST" action="/thank-you.html" data-netlify="true" class="theme-form-one">
+    <div class="row">
+        <div class="col-md-6"><input type="text" name="name" placeholder="Name *" required></div>
+        <div class="col-md-6"><input type="text" name="phone" placeholder="Phone *" required></div>
+        <div class="col-md-6"><input type="email" name="email" placeholder="Email *" required></div>
+        <div class="col-md-6">
+            <select class="form-control" name="service" required>
+                <option value="" disabled selected>Service you’re looking for?</option>
+                <option value="MARRIAGE">MARRIAGE</option>
+                <option value="VASTU">VASTU</option>
+                <option value="ASTROLOGY">ASTROLOGY</option>
+                <option value="NUMEROLOGY">NUMEROLOGY</option>
+            </select>
+        </div>
+        <div class="col-12"><textarea name="message" placeholder="Message" required></textarea></div>
+    </div>
+    <input type="hidden" name="form-name" value="contact">
+    <button class="theme-button-one">SUBMIT</button>
+</form>
                         </div> <!-- /.form-wrapper -->
                     </div> <!-- /.col- -->
                 </div> <!-- /.main-content -->
