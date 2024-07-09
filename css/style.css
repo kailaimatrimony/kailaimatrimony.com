@@ -203,11 +203,17 @@ footer .copyrights{
         .km_slider{
             margin-top: -96px;
         }
+        .km_founder {
+            text-align: center;
+        }
     .carousel-item img{
         object-fit: contain;
     }
     .manu-header ul{
         padding: 12px 0px;
     }
-
+    .spacing{
+        margin-top: -12px;
+        margin-bottom: 24px;
+    }
 }
