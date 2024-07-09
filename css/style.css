@@ -101,6 +101,7 @@ padding: 0px 24px;
 }
 .text .read-more {
 font-size: 13px !important;
+text-decoration: underline !important;
 }
 .text .fa{
 font-size: 13px !important;
