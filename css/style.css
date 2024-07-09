@@ -199,7 +199,7 @@ footer .copyrights{
     }
             
     }
-    @media screen and (max-width:369px) {
+    @media screen and (max-width:396px) {
         .km_slider{
             margin-top: -96px;
         }
