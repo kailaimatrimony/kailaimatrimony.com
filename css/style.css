@@ -199,3 +199,15 @@ footer .copyrights{
     }
             
     }
+    @media screen and (max-width:369px) {
+        .km_slider{
+            margin-top: -96px;
+        }
+    .carousel-item img{
+        object-fit: contain;
+    }
+    .manu-header ul{
+        padding: 12px 0px;
+    }
+
+}

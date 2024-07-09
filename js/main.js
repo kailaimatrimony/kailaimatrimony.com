@@ -42,27 +42,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    function updateLanguage() {
-        const elementsToTranslate = document.querySelectorAll('[data-en], [data-ta]');
-        const language = document.getElementById('language-selector').value;
-        
-        elementsToTranslate.forEach(element => {
-            let text = element.getAttribute(`data-${language}`);
-            if (text) {
-                if (language === 'ta' && window.innerWidth < 769) {
-                    text = text.replace('கயிலை', 'கயிலை<br>');
-                }
-                element.innerHTML = text;
-            }
-        });
-    }
+  function updateLanguage() {
+      const language = document.getElementById('language-selector').value;
+      const kmLogoP = document.querySelector('.km_logo p'); // Select the <p> inside .km_logo
 
-    // Update language on initial load
-    updateLanguage();
+      if (language === 'ta' && window.innerWidth < 769) {
+          kmLogoP.innerHTML = kmLogoP.getAttribute('data-ta').replace('கயிலை', 'கயிலை<br>');
+      } else {
+          kmLogoP.innerHTML = kmLogoP.getAttribute(`data-${language}`);
+      }
+  }
 
-    // Update language on language change
-    document.getElementById('language-selector').addEventListener('change', updateLanguage);
+  // Update language on initial load
+  updateLanguage();
 
-    // Update language on window resize
-    window.addEventListener('resize', updateLanguage);
+  // Update language on language change
+  document.getElementById('language-selector').addEventListener('change', updateLanguage);
+
+  // Update language on window resize
+  window.addEventListener('resize', updateLanguage);
 });
