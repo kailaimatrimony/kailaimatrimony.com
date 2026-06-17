@@ -218,3 +218,17 @@ footer .copyrights{
         margin-bottom: 24px;
     }
 }
+.dropdown-menu {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #b22222;
+}
